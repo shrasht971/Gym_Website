@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--   ====================== NAV BAR CREATION ======================= -->
+    <header>
+        <nav class="Nav-Bar" id="target-div">
+            <img src="./images/logo.png" id="Nav_logo" alt="">
+            <ul class="Navbar-UnorderedList" id="myLinks">
+                <li class="Navbar-items"><a href="/index.html" class="Navbar-links">Home</a></li>
+                <li class="Navbar-items"><a href="#" class="Navbar-links">Classes</a></li>
+                <li class="Navbar-items"><a href="/products.html" class="Navbar-links">Products</a></li>
+                <li class="Navbar-items"><a href="/blogs.html" class="Navbar-links">Blogs</a></li>
+                <!-- <li class="Navbar-items" id="menu-Services"></li> -->
+                <button id="Nav-Button">
+                    <a class="Navbar-links" id="Nav-JoinUs" href="#" onclick="openForm()">Join Us</a>
+                </button>
+            </ul>
+            <i class="fa-solid fa-bars" id="Nav_burger" onclick="myFunction()"></i>
+        </nav>
+    </header>
+
+
+    <!--  ========================= CEATING MAIN SECTION ============================== -->
+
+    <main>
+
+        <div class="form-popup" id="myForm">
+
+
+            <form class="Form_container">
+                <h3 class="SubscriptionPln_Heading">SUBSCRIPTION PLAN</h3>
+                <br>
+
+                <div class="Form_Details">
+                    <!-- <span class="close_btn">x</span> -->
+                    <label class="form_margin" for="username">Full Name :</label><br>
+                    <input class="form_margin placeholder_size" type="text" id="username" name="username"
+                        placeholder="Enter Your Full Name"><br>
+
+                    <label class="form_margin" for="email">Email :</label><br>
+                    <input class="form_margin placeholder_size" type="text" id="email" name="email"
+                        placeholder="Enter Your Email ID"><br>
+
+                    <label class="form_margin" for="phone">Mobile Number :</label><br>
+                    <input class="form_margin placeholder_size" type="tel" id="phone" name="phone" pattern="[0-9]{10}"
+                        placeholder="Enter Your Mobile Number"><br>
+
+                    <label class="form_margin" for="duration">Duration :</label>
+                    <!-- <input type="radio" id="duration" name="duration"> -->
+                    <br>
+
+                    <input class="form_margin" type="radio" id="monthly" name="duration" value="monthly">
+                    <label class="form_margin" for="monthly">Monthly</label>
+
+                    <input class="form_margin radio_space_yearly" type="radio" id="yearly" name="duration"
+                        value="yearly">
+                    <label class="form_margin" for="yearly">Yearly</label>
+                    <br>
+
+                    <label class="form_margin" for="payment">Made of Payment :</label>
+                    <br>
+
+                    <input class="form_margin" type="radio" id="cash" name="payment" value="cash">
+                    <label class="form_margin" for="cash">Cash</label>
+
+                    <input class="form_margin radio_space_online" type="radio" id="online" name="payment"
+                        value="online">
+                    <label class="form_margin" for="online">Online</label>
+                    <br>
+
+                    <label class="form_margin" for="personaltraining">Personal Training :<small>*free with yearly
+                            plan</small></label><br>
+
+                    <input class="form_margin" type="radio" id="required" name="personaltraining" value="required">
+                    <label class="form_margin" for="required">Required</label>
+                    <br>
+
+                    <input class="form_margin" type="radio" id="notrequired" name="personaltraining"
+                        value="notrequired">
+                    <label class="form_margin" for="notrequired">Not Required</label>
+                    <br>
+
+                    <input class="form_margin" type="checkbox" id="terms" name="terms" required>
+                    <label class="form_margin" for="terms">I accept all terms and conditions provided in this
+                        form.</label>
+                    <br>
+                    <button class="PlanBtn_size" type="submit">BUY PLAN</button>
+                    <br>
+
+                    <div id="last-linksbtn">
+                        <button><a href="#" class="close-button btn" onclick="closeForm()">Close</a></button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- ============================ Section 1 OUR CLASSES ========================= -->
+        <section class="OurClasses_Section1BgImg">
+            <div class="OurSection1_Heading">
+                <h2 class="OurSec1_Heading HomePage_Headings">Our Classes</h2>
+                <!-- <hr class="OurSec1_Hr_Ruler"> -->
+            </div>
+
+            <!-- <br> -->
+
+            <!-- <div class="OurClses_Sec1Div">
+                <img class="OurClses_Sec1_Bg_Img" src="/images/bg 1.jpg" alt="">
+            </div> -->
+
+            <div class="OurClasses_ItemsContainer">
+                <div class="OurCls_Items">
+                    <img class="OurCls_LevelImg" src="./images/gym1.jpg" alt="">
+                    <p class="OurCls_LevelPara">6:30 - 7:30 AM</p>
+                    <button class="OurCls_LevelBtn1"><a class="OurCls_LevelLink" href="#">Power Excello</a></button>
+                </div>
+
+                <div class="OurCls_Items">
+                    <img class="OurCls_LevelImg" src="./images/gym2.png" alt="">
+                    <p class="OurCls_LevelPara">6:30 - 7:30 AM</p>
+                    <button class="OurCls_LevelBtn"><a class="OurCls_LevelLink" href="#">Mixed-Level
+                            Excello</a></button>
+                </div>
+
+                <div class="OurCls_Items">
+                    <img class="OurCls_LevelImg" src="./images/gym3.jpg" alt="">
+                    <p class="OurCls_LevelPara">6:30 - 7:30 AM</p>
+                    <button class="OurCls_LevelBtn1"><a class="OurCls_LevelLink" href="#">Beginner Level</a></button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ============================ SECTION 2 OUR TRAINING PARTNERS ================================ -->
+
+        <section class="OurTraining_Partners_Section2">
+            <div class="OurTraining_Partners_BG_ClrAbove"></div>
+
+            <!--  Our Training Partners Heading -->
+            <div class="OurTrPartners_Heading">
+                <h2 class="PartnersSec2_Heading HomePage_Headings">Our Training Partners</h2>
+                <hr class="PartnersSec2_Hr_Ruler">
+            </div>
+
+            <!-- Section 2 Our Training Partners Items & Images -->
+
+            <div class="OurTrPartners_ItemsContainer">
+                <div class="PartnersName_Items">
+                    <img class="PartnersName_Img" src="./images/training_img1.jpg" alt="">
+                    <button class="Partners_NameBtn1"><a class="Partners_NameLink" href="#">John Smith</a></button>
+                </div>
+
+                <div class="PartnersName_Items">
+                    <img class="PartnersName_Img" src="./images/training_img2.jpg" alt="">
+                    <button class="Partners_NameBtn1"><a class="Partners_NameLink" href="#">Anais Louls</a></button>
+                </div>
+
+                <div class="PartnersName_Items">
+                    <img class="PartnersName_Img" src="./images/training_img3.jpg" alt="">
+                    <button class="Partners_NameBtn1"><a class="Partners_NameLink" href="#">Phil Health</a></button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========================= SECTION 3 CAROUSEL IMAGES ============================= -->
+
+        <section class="Carousel_ImagesContainer">
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">1 / 3</div> -->
+                    <img src="./images/bruce-mars.jpg" class="Carousel_Img" style="width:100%">
+                    <!-- <div class="text">Caption First</div> -->
+                </div>
+
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">2 / 3</div> -->
+                    <img src="./images/Exercise_Blog.jpg" class="Carousel_Img" style="width:100%">
+                    <!-- <div class="text">Caption Two</div> -->
+                </div>
+
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">3 / 3</div> -->
+                    <img src="./images/fitness_club.jpg" class="Carousel_Img" style="width:100%">
+                    <!-- <div class="text">Caption Three</div> -->
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+        </section>
+
+
+        <!-- ================ SCRIPT FOR CAROUSEL IMAGE =========================  -->
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+
+            //  ======================== SCRIPT FOR FORM POPUP ============================ 
+
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+        <script src="/script.js"></script>
+    </main>
+
+
+    <!-- =========================== FOOTER PART ============================-->
+
+    <footer>
+        <div class="Footer_Container">
+            <div class="FootSub_Container1">
+                <img class="Foot_logo1" src="./images/logo.png" alt="">
+                <p class="FootSub1_Font">Prioritize Your Fitness Goals with our world class services</p>
+            </div>
+
+            <div class="FootSub_Container2">
+                <div>
+                    <div class="FootSub2_FontSize">Company</div>
+                    <!-- <br> -->
+                    <ul class="FootSub2_UnorderList">
+                        <li class="FootSub2_list"><a class="FootSub2_link" href="#">About</a></li>
+                        <li class="FootSub2_list"><a class="FootSub2_link" href="#">Blogs</a></li>
+                        <li class="FootSub2_list"><a class="FootSub2_link" href="#">Careers</a></li>
+                        <li class="FootSub2_list"><a class="FootSub2_link" href="#">Terms & Conditions</a></li>
+                    </ul>
+
+                </div>
+
+                <div>
+                    <div class="FootSub2_FontSize">Contact</div>
+                    <!-- <br> -->
+                    <ul class="FootSub_UnorderList">
+                        <li class="FootSub2_list"><a class="FootSub2_link" href="#">Press</a></li>
+                        <li class="FootSub2_list"><a class="FootSub2_link" href="#">Help/FAQs</a></li>
+                        <li class="FootSub2_list"><a class="FootSub2_link" href="#">Mobile</a></li>
+                    </ul>
+
+                    <!-- <span><a href="#">Terms & Conditions</a></span> -->
+                </div>
+
+                <div>
+                    <div class="FootSub2_FontSize">More</div>
+                    <!-- <br> -->
+                    <ul class="FootSub_UnorderList">
+                        <li class="FootSub2_list"><a class="FootSub2_link" href="#">Program</a></li>
+                        <li class="FootSub2_list"><a class="FootSub2_link" href="#">Plans</a></li>
+                        <li class="FootSub2_list"><a class="FootSub2_link" href="#">Method</a></li>
+                    </ul>
+
+                    <!-- <span><a href="#">Terms & Conditions</a></span> -->
+                </div>
+            </div>
+
+            <div class="FootSub_Container3">
+                <div class="FootSub3_Font">Popular Tags</div>
+                <br>
+                <span><button class="FootSub3_Button FootSub3_Greyclr">ABS</button></span>
+                <span><button class="FootSub3_Button FootSub3_Greyclr">Workout</button></span>
+                <span><button class="FootSub3_Button FootSub3_Orgclr">Nutrition</button></span>
+                <span><button class="FootSub3_Button FootSub3_Greyclr hide">ABS</button></span>
+                <span><button class="FootSub3_Button FootSub3_Greyclr">Boxing</button></span>
+                <span><button class="FootSub3_Button FootSub3_Orgclr">Trainer</button></span>
+                <span class="FootSub3_margin"><button
+                        class="FootSub3_Button FootSub3_Orgclr FootSub3_margin">Facilities</button></span>
+            </div>
+
+            <div class="handler">
+
+                <svg class="SocialMed_Container Main_SoContainerOuter" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 340 80" fill="none">
+                    <path class="Main_SoContainerInner"
+                        d="M1 4C1 2.34315 2.34315 1 4 1H335.474C338.015 1 339.405 3.96306 337.781 5.91772L277.931 77.9177C277.361 78.6034 276.515 79 275.624 79H4C2.34315 79 1 77.6569 1 76V4Z"
+                        fill="#FFA500" stroke="white" stroke-width="2" />
+                </svg>
+                <div class="social-handle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" viewBox="0 0 28 31" fill="none">
+                        <path class="Clr_WhtResp"
+                            d="M23.8062 4.37741C21.1875 1.55327 17.7 0 13.9937 0C6.34375 0 0.11875 6.69723 0.11875 14.9276C0.11875 17.5567 0.75625 20.1253 1.96875 22.3913L0 30.1241L7.35625 28.0463C9.38125 29.2365 11.6625 29.8619 13.9875 29.8619H13.9937C21.6375 29.8619 28 23.1646 28 14.9343C28 10.9469 26.425 7.20154 23.8062 4.37741ZM13.9937 27.347C11.9187 27.347 9.8875 26.7486 8.11875 25.6189L7.7 25.35L3.3375 26.5805L4.5 22.0013L4.225 21.5307C3.06875 19.5538 2.4625 17.2743 2.4625 14.9276C2.4625 8.08913 7.6375 2.52155 14 2.52155C17.0812 2.52155 19.975 3.81258 22.15 6.1593C24.325 8.50602 25.6625 11.6193 25.6562 14.9343C25.6562 21.7794 20.35 27.347 13.9937 27.347ZM20.3188 18.0543C19.975 17.866 18.2688 16.965 17.95 16.8439C17.6313 16.7162 17.4 16.6557 17.1688 17.0322C16.9375 17.4088 16.275 18.2426 16.0688 18.4981C15.8688 18.7469 15.6625 18.7805 15.3188 18.5922C13.2812 17.4962 11.9438 16.6355 10.6 14.1543C10.2438 13.4953 10.9562 13.5424 11.6187 12.1169C11.7312 11.8681 11.675 11.6529 11.5875 11.4646C11.5 11.2764 10.8063 9.44067 10.5188 8.6943C10.2375 7.96809 9.95 8.06895 9.7375 8.0555C9.5375 8.04206 9.30625 8.04206 9.075 8.04206C8.84375 8.04206 8.46875 8.13619 8.15 8.50602C7.83125 8.88257 6.9375 9.78361 6.9375 11.6193C6.9375 13.455 8.18125 15.2301 8.35 15.4789C8.525 15.7277 10.7937 19.4932 14.275 21.1138C16.475 22.1358 17.3375 22.2232 18.4375 22.0484C19.1063 21.9408 20.4875 21.1474 20.775 20.2732C21.0625 19.3991 21.0625 18.6527 20.975 18.4981C20.8938 18.33 20.6625 18.2358 20.3188 18.0543Z"
+                            fill="black" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" viewBox="0 0 28 31" fill="none">
+                        <path class="Clr_WhtResp"
+                            d="M28 15.1537C28 6.7825 21.7339 0 14 0C6.26613 0 0 6.7825 0 15.1537C0 22.7171 5.1196 28.9863 11.8125 30.1241V19.5342H8.25605V15.1537H11.8125V11.815C11.8125 8.01741 13.9012 5.91972 17.1003 5.91972C18.6324 5.91972 20.2345 6.21546 20.2345 6.21546V9.94278H18.4687C16.73 9.94278 16.1875 11.1111 16.1875 12.3093V15.1537H20.0702L19.4493 19.5342H16.1875V30.1241C22.8804 28.9863 28 22.7171 28 15.1537Z"
+                            fill="black" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" viewBox="0 0 28 31" fill="none">
+                        <path class="Clr_WhtResp"
+                            d="M27.4149 4.7134C27.0929 2.8581 26.1441 1.39693 24.9394 0.901056C22.7558 0 14 0 14 0C14 0 5.2442 0 3.06058 0.901056C1.8559 1.397 0.907111 2.8581 0.585087 4.7134C0 8.07624 0 15.0925 0 15.0925C0 15.0925 0 22.1087 0.585087 25.4716C0.907111 27.3269 1.8559 28.7272 3.06058 29.223C5.2442 30.1241 14 30.1241 14 30.1241C14 30.1241 22.7558 30.1241 24.9394 29.223C26.1441 28.7272 27.0929 27.3269 27.4149 25.4716C28 22.1087 28 15.0925 28 15.0925C28 15.0925 28 8.07624 27.4149 4.7134ZM11.1363 21.4627V8.72226L18.4545 15.0926L11.1363 21.4627Z"
+                            fill="black" />
+                    </svg>
+
+                    <svg class="Twitter_resp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black"
+                        width="24" height="24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path class="Clr_WhtResp"
+                            d="M22.46 5.72c-.84.37-1.75.62-2.7.73.97-.58 1.72-1.51 2.07-2.62-.91.54-1.92.93-3 1.14-.86-.92-2.08-1.5-3.44-1.5-2.6 0-4.72 2.12-4.72 4.72 0 .37.04.73.13 1.08-3.93-.2-7.4-2.08-9.73-4.94-.41.7-.65 1.52-.65 2.39 0 1.64.83 3.08 2.09 3.93-.77-.02-1.49-.24-2.12-.6v.06c0 2.3 1.63 4.22 3.78 4.66-.4.1-.82.16-1.26.16-.3 0-.6-.03-.89-.08.6 1.85 2.35 3.2 4.42 3.24-1.62 1.3-3.66 2.08-5.88 2.08-.38 0-.76-.02-1.13-.07 2.1 1.35 4.6 2.14 7.29 2.14 8.75 0 13.54-7.25 13.54-13.54 0-.21 0-.42-.02-.63.93-.67 1.73-1.51 2.37-2.46z" />
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer_Copyright -->
+
+        <div class="Footer_Copyright">
+            CopyRight All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
